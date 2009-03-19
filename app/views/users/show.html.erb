@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<% if @user.photo.exists? %>
+  <p><%= image_tag @user.photo.url %></p>
+<% else %>
+  <p>No photo for this user. <%= link_to 'Upload', edit_user_path(@user) %></p>
+<% end %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
