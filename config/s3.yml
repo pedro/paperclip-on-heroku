@@ -1,0 +1,11 @@
+development:
+  access_key_id: abc
+  secret_access_key: abc/efg
+
+test:
+  access_key_id: abc
+  secret_access_key: abc/efg
+
+production:
+  access_key_id: abc
+  secret_access_key: abc/efg
