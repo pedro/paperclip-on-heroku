@@ -3,7 +3,7 @@
   <%=h @user.name %>
 </p>
 
-<% if @user.photo.exists? %>
+<% if @user.photo_file_name %>
   <p><%= image_tag @user.photo.url %></p>
 <% else %>
   <p>No photo for this user. <%= link_to 'Upload', edit_user_path(@user) %></p>
